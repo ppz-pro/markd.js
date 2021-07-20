@@ -1,6 +1,6 @@
 const Path = require('path')
-const createReadline = require('../readline/file')
-const parse = require('../parse')
+const createReadline = require('@ppzp/markd/readline/file')
+const parse = require('@ppzp/markd/parse')
 
 ;(async function() {
   const inputPath = Path.join(__dirname, './test.md')
