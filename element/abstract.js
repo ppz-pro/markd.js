@@ -18,14 +18,20 @@ module.exports = class {
         }
       }
   }
+  
+  lastChildren() {
+    return this.content[this.content.length - 1]
+  }
 
   push(tar) {
-    if(this.content instanceof Array) {
-      console.log(tar.tagname)
+    if(this.content instanceof Array)
       this.content.push(tar)
-    } else {
+    else
       this.content += tar
-    }
+  }
+
+  debug() {
+    console.log(this.tagname)
   }
 
   pushLine(tar) {
@@ -33,6 +39,7 @@ module.exports = class {
   }
 
   toHTML() {
+    this.debug()
     return `<${this.tagname}>${
       this.content instanceof Array
         ? this.content.map( el => el.toHTML() ).join('')
