@@ -6,6 +6,19 @@ module.exports = class {
     this.content = content
   }
 
+  take(tagname) {
+    if(this.content instanceof Array)
+      for(let i in this.content) {
+        const el = this.content[i]
+        if(el.tagname == tagname)
+          return this.content.splice(i, 1)
+        else {
+          const son = el.take(Class)
+          if(son) return son
+        }
+      }
+  }
+
   push(tar) {
     if(this.content instanceof Array) {
       console.log(tar.tagname)

@@ -1,10 +1,12 @@
 const El = require('./abstract')
 
-const Class = exports.Class = El.born('h4')
-
-const reg = /^# (.+)/
+const reg = /^(#+) (.+)/
 exports.parse = function(line) {
   const result = reg.exec(line)
-  if(result)
-    return new Class(result[1])
+  if(!result) return
+
+  const sharpNum = result[1].length
+  if(sharpNum > 5) return
+  
+  return new El('h' + sharpNum, result[2])
 }
