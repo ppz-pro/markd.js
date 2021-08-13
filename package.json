@@ -3,7 +3,6 @@
   "version": "0.0.0",
   "description": "markdown => html",
   "main": "parser.js",
-  "type": "module",
   "scripts": {
     "build": "tsc"
   },

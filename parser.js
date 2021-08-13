@@ -1,13 +1,13 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var children_1 = require("./element/base/html/children");
-var parser_1 = require("./element/h/parser");
-var parser_2 = require("./element/list/parser");
-var parser_3 = require("./element/block-quote/parser");
-var html_1 = require("./element/p/html");
+const children_1 = require("./element/base/html/children");
+const parser_1 = require("./element/h/parser");
+const parser_2 = require("./element/list/parser");
+const parser_3 = require("./element/block-quote/parser");
+const html_1 = require("./element/p/html");
 /** 解析一个文档为一个 Element */
-var DocParser = /** @class */ (function () {
-    function DocParser(readline, root) {
+class DocParser {
+    constructor(readline, root) {
         this.readline = readline;
         this.root = root || new children_1.default('div');
         this.elementParsers = [
@@ -17,14 +17,12 @@ var DocParser = /** @class */ (function () {
         ];
     }
     /** 解析文档，返回 Root 元素 */
-    DocParser.prototype.parse = function () {
+    parse() {
         while (this.readline.head) {
-            var el = void 0;
-            for (var _i = 0, _a = this.elementParsers; _i < _a.length; _i++) {
-                var elParser = _a[_i];
+            let el;
+            for (let elParser of this.elementParsers)
                 if (el = elParser.check())
                     break;
-            }
             if (!el) {
                 el = new html_1.default(this.readline.head);
                 this.readline.next();
@@ -32,7 +30,6 @@ var DocParser = /** @class */ (function () {
             this.root.push(el);
         }
         return this.root;
-    };
-    return DocParser;
-}());
+    }
+}
 exports.default = DocParser;

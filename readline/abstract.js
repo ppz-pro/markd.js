@@ -1,8 +1,5 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var AbstractReadline = /** @class */ (function () {
-    function AbstractReadline() {
-    }
-    return AbstractReadline;
-}());
+class AbstractReadline {
+}
 exports.default = AbstractReadline;
