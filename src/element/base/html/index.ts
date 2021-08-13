@@ -1,5 +1,6 @@
 export type content = string | null
 
+/** 元素内容，应尽量少参与 parse */
 export default class Element {
   /** 标签名 */
   tagname: string

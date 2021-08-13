@@ -1,6 +1,7 @@
 import BaseElement from '../html'
 import Readline from '../../../readline/abstract'
 
+/** 把 readline 里读到的内容解析为 Element */
 export default abstract class AbstractElementParser<Element extends BaseElement> {
   protected readline
   constructor(readline: Readline) {
