@@ -1,0 +1,6 @@
+example
+
+*.tgz
+node_modules
+.test
+tsconfig.json
