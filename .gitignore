@@ -1,7 +1,1 @@
-# .npmignore 保持一致
-
-example
 *.tgz
-node_modules
-.test
-tsconfig.json
