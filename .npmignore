@@ -1,5 +1,0 @@
-*.tgz
-node_modules
-demo/
-.test
-dist

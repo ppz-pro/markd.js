@@ -1,10 +1,10 @@
 {
   "name": "@ppzp/ppz",
   "version": "0.0.0",
-  "description": "",
-  "main": "dist/parse.js",
+  "description": "markdown => html",
+  "main": "parser.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/ppz-pro/markdown.js#readme",
   "devDependencies": {
-    "@types/node": "^16.4.13"
+    "@types/node": "^16.4.13",
+    "typescript": "^4.3.5"
   }
 }

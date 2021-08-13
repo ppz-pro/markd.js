@@ -3,7 +3,8 @@
     "outDir": "./dist",
     "declaration": true,
     "noImplicitAny": true,
-    "target": "ES5"
+    "module": "CommonJS",
+    "target": "ES2016"
   },
-  // "include": ["./src/**/*"]
+  "include": ["./src/**/*"]
 }
