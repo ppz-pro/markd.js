@@ -1,8 +1,8 @@
-import Path from 'path'
-import FS from 'fs'
-
-import Readline from '@ppzp/ppz/readline/cached-file.js'
-import DocParser from '@ppzp/ppz/parser.js'
+// @ts-check
+const Path = require('path')
+const FS = require('fs')
+const Readline = require('@ppzp/ppz/readline/cached-file').default
+const DocParser = require('@ppzp/ppz').default
 
 ;(async function() {
   const input = Path.join(__dirname, '../readme-input.md')

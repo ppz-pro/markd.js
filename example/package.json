@@ -1,5 +1,4 @@
 {
-  "type": "module",
   "dependencies": {
     "@ppzp/ppz": "file:../ppzp-ppz-0.0.0.tgz"
   }
