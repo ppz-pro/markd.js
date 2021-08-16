@@ -11,7 +11,8 @@ export default class Element {
   protected attr: attr
   constructor(tagname: string, content?: content, attr?: attr) {
     this.tagname = tagname
-    this.setContent(content)
+    if(content)
+      this.setContent(content)
     this.attr = attr || {}
   }
 
