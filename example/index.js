@@ -5,7 +5,7 @@ const Readline = require('@ppzp/ppz/readline/cached-file').default
 const DocParser = require('@ppzp/ppz').default
 
 ;(async function() {
-  const input = Path.join(__dirname, '../readme-input.md')
+  const input = Path.join(__dirname, '../readme.md')
   const output = Path.join(__dirname, '../readme.html')
 
   const readline = new Readline(input)
