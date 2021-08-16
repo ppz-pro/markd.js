@@ -1,4 +1,6 @@
-*.tgz
-node_modules
 .test
 dist
+example
+node_modules
+
+*.tgz
