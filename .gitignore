@@ -1,4 +1,8 @@
-node_modules
+.test
+demo
 dist
 example
+node_modules
+src
+
 *.tgz

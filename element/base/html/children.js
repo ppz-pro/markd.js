@@ -1,9 +1,9 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const _1 = require("./");
-class ElementWithChildren extends _1.default {
-    constructor(tagname, content, children) {
-        super(tagname, content);
+const complex_1 = require("./complex");
+class ElementWithChildren extends complex_1.default {
+    constructor(tagname, content, children, attr) {
+        super(tagname, content, attr);
         this.children = children || [];
     }
     /** 追加子元素 */

@@ -1,5 +1,5 @@
 import AbstractChildren from '../base/html/children';
-import Abstract from '../base/html';
+import Abstract from '../base/html/complex';
 export declare class ListElement extends AbstractChildren {
     protected readonly children: LiElement[];
     lastChild(): LiElement;

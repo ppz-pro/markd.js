@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.LiElement = exports.ListElement = void 0;
 const children_1 = require("../base/html/children");
-const html_1 = require("../base/html");
+const complex_1 = require("../base/html/complex");
 class ListElement extends children_1.default {
     constructor(level) {
         super('ul');
@@ -29,7 +29,7 @@ class ListElement extends children_1.default {
     }
 }
 exports.ListElement = ListElement;
-class LiElement extends html_1.default {
+class LiElement extends complex_1.default {
     constructor(content, level) {
         super('li', content);
         this.level = level;
@@ -39,7 +39,7 @@ class LiElement extends html_1.default {
         this.child.push(child);
     }
     toHTMLBody() {
-        return `<span>${this.content}</span>${this.child.toHTML()}`;
+        return `<span>${this.getContent()}</span>${this.child.toHTML()}`;
     }
 }
 exports.LiElement = LiElement;

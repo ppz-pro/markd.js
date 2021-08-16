@@ -1,5 +1,5 @@
 import Readline from './readline/abstract';
-import Element from './element/base/html';
+import Element from './element/base/html/complex';
 import ElementWithChildren from './element/base/html/children';
 import ElParser from './element/base/parser';
 /** 解析一个文档为一个 Element */

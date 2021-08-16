@@ -3,9 +3,6 @@
   "version": "0.0.0",
   "description": "markdown => html",
   "main": "parser.js",
-  "scripts": {
-    "build": "tsc"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ppz-pro/markdown.js.git"
