@@ -1,11 +1,13 @@
-import Base, { content } from './'
+import { content, attr } from './index'
+import Base from './complex'
 
-export default class ElementWithChildren extends Base {
+export default
+class ElementWithChildren extends Base {
   /** 子元素 */
   protected children: Base[]
   
-  constructor(tagname: string, content?: content, children?: Base[]) {
-    super(tagname, content)
+  constructor(tagname: string, content?: content, children?: Base[], attr?: attr) {
+    super(tagname, content, attr)
     this.children = children || []
   }
 

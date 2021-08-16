@@ -1,5 +1,5 @@
 import AbstractChildren from '../base/html/children'
-import Abstract from '../base/html'
+import Abstract from '../base/html/complex'
 
 export
 class ListElement extends AbstractChildren {
@@ -48,6 +48,6 @@ class LiElement extends Abstract {
   }
 
   toHTMLBody() {
-    return `<span>${this.content}</span>${this.child.toHTML()}`
+    return `<span>${this.getContent()}</span>${this.child.toHTML()}`
   }
 }

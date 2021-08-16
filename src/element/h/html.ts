@@ -1,4 +1,4 @@
-import Base from '../base/html'
+import Base from '../base/html/complex'
 
 export type level = 1|2|3|4|5
 

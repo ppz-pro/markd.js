@@ -1,4 +1,4 @@
-import BaseElement from '../html'
+import BaseElement from '../html/complex'
 import Readline from '../../../readline/abstract'
 
 /** 把 readline 里读到的内容解析为 Element */
