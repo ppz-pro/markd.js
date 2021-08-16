@@ -5,4 +5,5 @@ example
 node_modules
 src
 
+readme.html
 *.tgz
